@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Typing School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>English Typing School</h1>
+      <p>Practice your English typing skills</p>
+    </header>
+
+    <section class="controls">
+
+      <label>
+        Level
+        <select id="level">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </label>
+
+      <label>
+        Lesson
+        <select id="lesson">
+          <option value="1">Lesson 1</option>
+          <option value="2">Lesson 2</option>
+          <option value="3">Lesson 3</option>
+        </select>
+      </label>
+
+      <label>
+        Time
+        <select id="timeLimit">
+          <option value="60">1 Minute</option>
+          <option value="120">2 Minutes</option>
+          <option value="300">5 Minutes</option>
+        </select>
+      </label>
+
+    </section>
+
+    <section class="typing-box">
+
+      <h2 id="lessonTitle">Lesson 1 - Easy</h2>
+
+      <div id="sentence">
+        The sun is shining today.
+      </div>
+
+      <textarea
+        id="typingInput"
+        placeholder="Start typing here..."
+        disabled>
+      </textarea>
+
+      <div class="buttons">
+        <button id="startBtn">Start</button>
+        <button id="finishBtn" disabled>Finish</button>
+      </div>
+
+    </section>
+
+    <section class="stats">
+
+      <div>
+        <strong id="time">00:00</strong>
+        <span>Time</span>
+      </div>
+
+      <div>
+        <strong id="wpm">0</strong>
+        <span>WPM</span>
+      </div>
+
+      <div>
+        <strong id="accuracy">100%</strong>
+        <span>Accuracy</span>
+      </div>
+
+      <div>
+        <strong id="errors">0</strong>
+        <span>Errors</span>
+      </div>
+
+    </section>
+
+    <section id="result" class="result hidden">
+
+      <h2>Lesson Completed!</h2>
+
+      <input id="studentName" type="text" placeholder="Student Name">
+      <input id="studentClass" type="text" placeholder="Class">
+
+      <button id="submitBtn">Submit Result</button>
+
+    </section>
+
+  </div>
+
+  <script src="student.js"></script>
+
+</body>
+</html>
